@@ -2,8 +2,8 @@
 <plugin
     xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.megster.cordova.bluetoothserial"
-    version="0.4.3">
+    id="my.com.uplus.bluetoothserial"
+    version="0.1.0">
 
     <name>Bluetooth Serial</name>
     <description>Bluetooth Serial Communication Plugin</description>
@@ -33,9 +33,7 @@
         <source-file src="src/android/com/megster/cordova/BluetoothSerialService.java"
             target-dir="src/com/megster/cordova"/>
 
-        <!-- kludge for 2.9 -->
-        <source-file src="src/android/org/apache/cordova/api/Dummy.java"
-            target-dir="src/org/apache/cordova/api"/>
+         
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.BLUETOOTH" />
